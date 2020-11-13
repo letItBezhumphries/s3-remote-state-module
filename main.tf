@@ -2,7 +2,7 @@ provider "aws" {
   region = var.AWS_REGION
 }
 
-resource "aws_s3_bucket" "terraform-state" {
+resource "aws_s3_bucket" "terraform_state" {
   bucket = var.BUCKET_NAME
 
   #prevent accidental deletion of this s3 bucket
