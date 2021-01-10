@@ -14,3 +14,13 @@ variable "TABLE_NAME" {
   default     = "fec-brokentable-tfstate-locks"
 }
 
+variable "environment" {
+  description = "The name of the environment."
+  default = "development"
+}
+
+variable "prefix" {
+  description = "The name of our org."
+  default = "examplecom"
+}
+
