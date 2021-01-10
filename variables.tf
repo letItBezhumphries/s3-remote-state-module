@@ -1,5 +1,7 @@
 variable "AWS_REGION" {
-  default = "us-west-2"
+  description = "The AWS region for this s3 bucket"
+  type        = string
+  default     = "us-west-2"
 }
 
 variable "BUCKET_NAME" {
@@ -16,11 +18,13 @@ variable "TABLE_NAME" {
 
 variable "environment" {
   description = "The name of the environment."
-  default = "development"
+  type        = string
+  default     = "development"
 }
 
 variable "prefix" {
   description = "The name of our org."
-  default = "examplecom"
+  type        = string
+  default     = "examplecom"
 }
 
